@@ -1,78 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Munhib Saad | IT Support Analyst</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      background: #f4f6f8;
-      color: #333;
-    }
-    h1 {
-      color: #1f2937;
-    }
-    .container {
-      max-width: 800px;
-      margin: auto;
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    .section {
-      margin-bottom: 25px;
-    }
-    .title {
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-    a {
-      color: #2563eb;
-      text-decoration: none;
-    }
-  </style>
+  <meta name="description" content="IT Support Analyst specializing in Microsoft 365, networking, security, and automation. Case studies, projects, and contact." />
+  <meta name="theme-color" content="#0b1020" />
+
+  <!-- Open Graph (optional but nice) -->
+  <meta property="og:title" content="Munhib Saad | IT Support Analyst" />
+  <meta property="og:description" content="Microsoft 365 • Networking • Security • Automation — Case Studies & Projects" />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="assets/style.css" />
+
+  <!-- Simple JSON-LD for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Munhib Saad",
+    "jobTitle": "IT Support Analyst",
+    "url": "https://munhib.ca",
+    "sameAs": [
+      "https://www.linkedin.com/in/YOUR-LINKEDIN"
+    ]
+  }
+  </script>
 </head>
+
 <body>
-  <div class="container">
-    <h1>Munhib Saad</h1>
-    <p>IT Support Analyst | Microsoft 365 | Networking | Security</p>
+  <header class="site-header">
+    <a class="logo" href="#top" aria-label="Home">
+      <span class="logo-dot"></span> Munhib<span class="muted">.ca</span>
+    </a>
 
-    <div class="section">
-      <div class="title">About Me</div>
-      <p>
-        I am an IT Support Analyst specializing in Microsoft 365, networking, and security. 
-        I enjoy troubleshooting complex issues, automating tasks with PowerShell, 
-        and improving system reliability for organizations.
-      </p>
-    </div>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#case-studies">Case Studies</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
 
-    <div class="section">
-      <div class="title">Key Skills</div>
-      <ul>
-        <li>Microsoft 365 (Exchange, Teams, SharePoint)</li>
-        <li>Networking & VPN (pfSense, SonicWall)</li>
-        <li>Security & Compliance (DLP, MFA, Defender)</li>
-        <li>PowerShell Automation</li>
-      </ul>
-    </div>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <span id="themeIcon">🌙</span>
+    </button>
+  </header>
 
-    <div class="section">
-      <div class="title">Projects / Experience</div>
-      <ul>
-        <li>Improved VPN reliability and troubleshooting workflows</li>
-        <li>Automated system reporting using PowerShell</li>
-        <li>Configured Microsoft 365 security and compliance policies</li>
-      </ul>
-    </div>
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <p class="pill">IT Support Analyst • Microsoft 365 • Networking • Security • Automation</p>
+        <h1>
+          I troubleshoot complex issues, harden environments, and automate repeatable work.
+        </h1>
+        <p class="subtitle">
+          I build reliable IT experiences for users and scalable operations for teams — from Microsoft 365 and device management
+          to VPN/firewall troubleshooting and security-first integrations.
+        </p>
 
-    <div class="section">
-      <div class="title">Contact</div>
-      <p>Email: your@email.com</p>
-      <p>LinkedIn: <a href="#">Add your LinkedIn</a></p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#case-studies">View Case Studies</a>
+          <a class="btn" href="#contact">Hire / Collaborate</a>
+          <a class="btn ghost" href="assets/Munhib_Saad_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+        </div>
+
+        <div class="hero-metrics">
+          <div class="metric">
+            <div class="metric-value">M365</div>
+            <div class="metric-label">Exchange • Teams • SharePoint</div>
+          </div>
+          <div class="metric">
+            <div class="metric-value">Security</div>
+            <div class="metric-label">DLP • MFA • Defender concepts</div>
+          </div>
+          <div class="metric">
+            <div class="metric-value">Ops</div>
+            <div class="metric-label">Automation • Troubleshooting • Support</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="card-header">
+          <h2>Currently building</h2>
+          <p class="muted">A practical portfolio that proves real outcomes.</p>
+        </div>
+        <ul class="checklist">
+          <li><span class="check">✓</span> Case studies (sanitized)</li>
+          <li><span class="check">✓</span> Project writeups + tools used</li>
+          <li><span class="check">✓</span> Contact page that converts</li>
+        </ul>
+        <div class="divider"></div>
+        <p class="muted small">
+          Tip: Recruiters scan fast — use the case studies below as proof of impact.
+        </p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <h2>About</h2>
+      <div class="grid two">
+        <div class="panel">
+          <p>
+            I’m an IT Support Analyst focused on Microsoft 365 administration, troubleshooting, and secure operations.
+            I enjoy solving the “messy” problems — migrations, access issues, broken mail flows, device failures, and
+            third-party integrations — and turning them into repeatable processes.
+          </p>
+          <p class="muted">
+            I value clear communication, documentation, and security-first decisions.
+          </p>
+        </div>
+
+        <div class="panel">
+          <h3 class="panel-title">What I’m great at</h3>
+          <ul class="bullets">
+            <li>Root-cause troubleshooting (mail, auth, connectivity, client apps)</li>
+            <li>Microsoft 365 administration and support</li>
+            <li>Documented workflows + stakeholder updates</li>
+            <li>Automation mindset (reduce repeated manual work)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <h2>Skills</h2>
+      <div class="chips">
+        <span class="chip">Microsoft 365</span>
+        <span class="chip">Exchange Online</span>
+        <span class="chip">Teams</span>
+        <span class="chip">SharePoint / OneDrive</span>
+        <span class="chip">Intune (device management)</span>
+        <span class="chip">Networking</span>
+        <span class="chip">VPN troubleshooting</span>
+        <span class="chip">Security-first admin</span>
+        <span class="chip">PowerShell automation</span>
+        <span class="chip">Documentation</span>
+        <span class="chip">Client communication</span>
+      </div>
+    </section>
+
+    <!-- CASE STUDIES -->
+    <section class="section" id="case-studies">
+      <div class="section-head">
+        <h2>Case Studies (sanitized)</h2>
+        <p class="muted">Real support scenarios, documented in a hiring‑manager friendly format.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card-top">
+            <h3>Google mailbox archiving → Microsoft 365 migration</h3>
+            <span class="tag">Exchange • Migration</span>
+          </div>
+          <p class="muted">
+            Assisted with archiving historical Google emails into Microsoft 365 using Exchange Admin migration tools and shared mailbox access.
+          </p>
+          <button class="btn small" data-modal="cs1">Read case study</button>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <h3>Third‑party SaaS request: scoped SharePoint access</h3>
+            <span class="tag">SharePoint • Security</span>
+          </div>
+          <p class="muted">
+            Gathered requirements and scoped access for a SaaS platform to read a specific SharePoint folder (trial use case).
+          </p>
+          <button class="btn small" data-modal="cs2">Read case study</button>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <h3>Hardware incident: laptop not charging → vendor escalation</h3>
+            <span class="tag">Endpoint • Vendor</span>
+          </div>
+          <p class="muted">
+            Coordinated troubleshooting and vendor repair scheduling while keeping the user informed and minimizing downtime.
+          </p>
+          <button class="btn small" data-modal="cs3">Read case study</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p class="muted">2–3 portfolio projects you can expand over time.</p>
+      </div>
+
+      <div class="grid three">
+        <div class="panel project">
+          <h3>Ticket-to-Case Study Template</h3>
+          <p class="muted">A repeatable format for turning your daily work into portfolio entries.</p>
+          <ul class="bullets">
+            <li>Problem → Impact</li>
+            <li>Constraints</li>
+            <li>Actions</li>
+            <li>Outcome</li>
+            <li>Tools used</li>
+          </ul>
+        </div>
+
+        <div class="panel project">
+          <h3>Security-first Integration Checklist</h3>
+          <p class="muted">A simple checklist for vetting third-party access requests.</p>
+          <ul class="bullets">
+            <li>Scope & least privilege</li>
+            <li>Data sensitivity</li>
+            <li>Auth method</li>
+            <li>Logging / audit trail</li>
+            <li>Rollback plan</li>
+          </ul>
+        </div>
+
+        <div class="panel project">
+          <h3>Outlook Troubleshooting Playbook</h3>
+          <p class="muted">A quick decision tree for mail client issues and modern auth constraints.</p>
+          <ul class="bullets">
+            <li>IMAP vs Modern Auth</li>
+            <li>Profile rebuild rules</li>
+            <li>Server vs client isolation</li>
+            <li>User comms templates</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <div class="grid two">
+        <div class="panel">
+          <h3 class="panel-title">Let’s connect</h3>
+          <p class="muted">
+            Best way to reach me: email or LinkedIn.
+          </p>
+          <div class="contact-buttons">
+            <a class="btn primary" href="mailto:YOUR.EMAIL@DOMAIN.COM">Email me</a>
+            <a class="btn" href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn ghost" href="https://github.com/underworld16190" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h3 class="panel-title">Freelance offerings (optional)</h3>
+          <ul class="bullets">
+            <li>M365 setup & hardening baseline</li>
+            <li>SharePoint permissions cleanup & structure</li>
+            <li>Mailbox / domain transition support</li>
+            <li>Incident triage & user support</li>
+          </ul>
+          <p class="muted small">Keep this short. Make it easy for clients to say “yes.”</p>
+        </div>
+      </div>
+      <footer class="footer">
+        <span class="muted small">© <span id="year"></span> Munhib Saad — Built on GitHub Pages</span>
+      </footer>
+    </section>
+  </main>
+
+  <!-- MODALS -->
+  <div class="modal" id="cs1" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="cs1title">
+      <div class="modal-head">
+        <h3 id="cs1title">Case Study: Google mailbox archiving → Microsoft 365</h3>
+        <button class="icon-btn" data-close aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body">
+        <h4>Problem</h4>
+        <p>A customer needed historical Google email content archived into Microsoft 365 for continuity and retention.</p>
+        <h4>Actions</h4>
+        <ul class="bullets">
+          <li>Coordinated access and prerequisites (including app-password style access where required — sanitized).</li>
+          <li>Configured the migration in Exchange admin tooling and monitored sync health.</li>
+          <li>Resumed failed batches and documented progress for handoff/closure.</li>
+        </ul>
+        <h4>Outcome</h4>
+        <p>Migration batches were set up and monitored with ongoing sync verification and documented updates for completion handoff.</p>
+        <h4>Tools</h4>
+        <p class="muted">Exchange Admin Center (migration), shared mailbox access, documentation updates.</p>
+      </div>
     </div>
   </div>
+
+  <div class="modal" id="cs2" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="cs2title">
+      <div class="modal-head">
+        <h3 id="cs2title">Case Study: Third-party SaaS request — scoped SharePoint access</h3>
+        <button class="icon-btn" data-close aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body">
+        <h4>Problem</h4>
+        <p>A third-party SaaS tool requested access to content in SharePoint for a trial use case (folder-level scope).</p>
+        <h4>Actions</h4>
+        <ul class="bullets">
+          <li>Collected requirements: what the SaaS is, what it needs to access, and whether scope is folder vs site-wide.</li>
+          <li>Confirmed intended target (specific research folder) before proceeding with broader access.</li>
+          <li>Prepared next steps pending internal review (least-privilege approach).</li>
+        </ul>
+        <h4>Outcome</h4>
+        <p>Scope and intent were clarified early to prevent over-permissioning and enable a controlled trial.</p>
+        <h4>Tools</h4>
+        <p class="muted">SharePoint permissions concepts, requirement gathering, stakeholder communication.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="cs3" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="cs3title">
+      <div class="modal-head">
+        <h3 id="cs3title">Case Study: Laptop not charging → vendor escalation</h3>
+        <button class="icon-btn" data-close aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body">
+        <h4>Problem</h4>
+        <p>A user reported a laptop charging failure requiring vendor involvement and scheduling.</p>
+        <h4>Actions</h4>
+        <ul class="bullets">
+          <li>Maintained frequent communication with the user and vendor to expedite resolution.</li>
+          <li>Coordinated the onsite service scheduling and ensured user expectations were clear.</li>
+          <li>Documented steps and status updates in ticket history (sanitized; no keys included).</li>
+        </ul>
+        <h4>Outcome</h4>
+        <p>Vendor service was scheduled and the user was kept informed through resolution steps.</p>
+        <h4>Tools</h4>
+        <p class="muted">Vendor coordination, ticket documentation, user communications.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/script.js"></script>
 </body>
 </html>
+``
